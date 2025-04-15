@@ -9,7 +9,6 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
       {
         "tab": "Guides",
         "groups": [
@@ -53,8 +52,7 @@
             ]
           }
         ]
-      }
-    ],
+      ,
     "global": {
       "anchors": [
         {
