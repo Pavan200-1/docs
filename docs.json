@@ -31,7 +31,6 @@
           }
         ]
       },
-      {
         "tab": "API Reference",
         "groups": [
           {
@@ -69,8 +68,7 @@
           "icon": "newspaper"
         }
       ]
-    }
-  },
+    },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
