@@ -11,7 +11,7 @@
   "navigation": {
         "groups": [
           {
-            "group":"Get started"'
+            "group":"Get started",
             "pages": [
               "Installation",
               "quickstart",
