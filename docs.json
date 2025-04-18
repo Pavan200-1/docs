@@ -13,7 +13,8 @@
           {
             "group": "Get Started",
             "pages": [
-              "introduction",
+              "Introduction",
+              "Installation",
               "Quickstart",
               "development"
             ]
