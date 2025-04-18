@@ -13,7 +13,7 @@
           {
             "group":"Get started",
             "pages": [
-              "AdMantum",
+              "installation",
               "quickstart",
               "AdscendMedia"
             ]
