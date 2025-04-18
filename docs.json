@@ -14,10 +14,8 @@
             "group": "Get Started",
             "pages": [
               "introduction",
-              "installation",
-              "Admin Configuration",
-              "AdNetworks Configuration",
-              "ChangeLog",
+              "Quickstart",
+              "development"
             ]
           },
           {
