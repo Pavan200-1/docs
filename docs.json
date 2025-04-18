@@ -14,8 +14,8 @@
             "group": "Get Started",
             "pages": [
               "Installation",
-              "Quickstart",
-              "development"
+              "quickstart",
+              "Admin configuration"
             ]
           },
           {
