@@ -13,9 +13,9 @@
           {
             "group":"Get started",
             "pages": [
-              "admantum",
-              "adscend-media",
-              "wannads",
+              "offerwalls/admantum",
+              "offerwalls/adscend-media",
+              "offerwalls/wannads",
               "admin"
             ]
           },
