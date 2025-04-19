@@ -19,6 +19,7 @@
               "offerwalls/kiwiwall",
               "offerwalls/wannads",
               "admin",
+              "facebook-web",
               "google-web"
             ]
           },
