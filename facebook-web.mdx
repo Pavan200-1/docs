@@ -1,5 +1,58 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+description: "Facebook Login to work in Web Version"
+title: "Facebook Login Configuration [Web]"
 ---
 
+Get App Id and Secret Key of your project from Facebook \!\! **IMPORTANT Note :** Your website site needs to be in https. that is, SSL is a must for Facebook login to work \!\! To generate APP ID and Secret Key you must be signed in to a Facebook Developer account.
+
+## How to get Facebook App ID and Secret Key ?
+
+Log in to the  https://developers.facebook.com/ and either select an existing app or create a new app. if you already have an existing app then **skip to step 3**
+
+![Facebook Console 1 Pn](/images/facebook_console_1.png)
+
+And Create a New App
+
+![Facebook Console 2 Pn](/images/facebook_console_2.png)
+
+And then Setup Facebook Login
+
+![Facebook Console 3 Pn](/images/facebook_console_3.png)
+
+Select Web as we are configuring Facebook login for the web version.
+
+![Facebook Console 4 Pn](/images/facebook_console_4.png)
+
+Give your site URL and click on save. ignore the other quickstart steps .. and go to the menu item **Settings --\> Basic** from your Facebook developer dashboard on the left.
+
+![Facebook Console 5 Pn](/images/facebook_console_5.png)
+
+And then copy your App ID and App Secret
+
+![Facebook Console 6 Pn](/images/facebook_console_6.png)
+
+And finally, Go to \*\*Facebook Login --\> Settings \*\*(step 4 in the above image) to add a valid **OAuth redirect URL** to finalize our settings.
+
+<Check>
+  Note :  Valid OAuth redirect URIs will be your script admin panel installed URL by appending 'admin/controller/oauth.php'.
+</Check>
+
+For Main Domain install :
+
+## Example :
+
+https://example.com/admin/controller/oauth.php
+
+For sub-domain install at [**https://subdomain.example.com**](https://subdomain.example.com**) 
+
+it'll become : [**https://subdomain.example.com/controller/oauth.php**](https://subdomain.example.com/controller/oauth.php**_)
+
+For subfolder install at [**https://example.com/subfolder**](https://example.com/subfolder**)
+
+it'll become : [https://example.com/subfolder/controller/oauth.php](https://example.com/subfolder/controller/oauth.php**)
+
+![Facebook Console 7 Pn](/images/facebook_console_7.png)
+
+Finally Paste the copied keys in your **Admin Panel --\> Settings --\> Configuration --\> Facebook Login**
+
+​**That’s it ..\!**
