@@ -7,69 +7,50 @@ Get a ClientId and Secret Key of your project from Google \!\! To generate Googl
 
 ## How to get Google Client ID and Client Secret ?
 
-<Steps>
-  <Step>
-    Go to  https://console.developers.google.com/apis
-  </Step>
-  <Step>
-    Navigate to the tab **Credentials**
+- Go to  https://console.developers.google.com/apis
+- Navigate to the tab **Credentials**
 
-    ![Google Console 1 Pn](/images/google_console_1.png)
-  </Step>
-  <Step>
-    Click **Select a project** --\> **New Project** and then click the button **Create**. **OR** if you've created a firebase project while setting up the **Pocket Android App** then you can select the existing project and **skip to Step 6.**
-  </Step>
-  <Step>
-    Navigate to the tab **OAuth consent screen**
+  ![Google Console 1 Pn](/images/google_console_1.png)
+- Click **Select a project** --\> **New Project** and then click the button **Create**. **OR** if you've created a firebase project while setting up the **Pocket Android App** then you can select the existing project and **skip to Step 6**.
+- Navigate to the tab **OAuth consent screen**.
 
-    ![Google Console 2 Pn](/images/google_console_2.png)
-  </Step>
-  <Step>
-    Enter the **Application name**, **Authorized domains** and click the button **Save**.
+  ![Google Console 2 Pn](/images/google_console_2.png)
+- Enter the **Application name**, **Authorized domains** and click the button **Save**.
 
-    ![Google Console 3 Pn](/images/google_console_3.png)
-  </Step>
-  <Step>
-    Click the button **Create Credentials** and from the dropdown list select **OAuth client ID**.
+  ![Google Console 3 Pn](/images/google_console_3.png)
+- Click the button **Create Credentials** and from the dropdown list select **OAuth client ID.**
 
-    ![Google Console 4 Pn](/images/google_console_4.png)
-  </Step>
-  <Step>
-    From the **Application type**, select the **Web application**, enter **Authorized JavaScript origins** and click the button **Create**.
+  ![Google Console 4 Pn](/images/google_console_4.png)
+- From the **Application type**, select the **Web application**, enter **Authorized JavaScript origins** and click the button **Create**.
 
-    <Check>
-      Note-1 : Authorized JavaScript origins will be your site URL Whether you may install the script in the main domain or subfolder, the final URL here will be your main domain like :
-    </Check>
-    ## Example 1 :
+  <Check>
+    Note-1 : Authorized JavaScript origins will be your site URL Whether you may install the script in the main domain or subfolder, the final URL here will be your main domain like :
+  </Check>
+  ## Example -1 :
 
-    incase of a subdomain, it'll become : https://subdomain.example.com
+  incase of a subdomain, it’ll become : [**https://subdomain.example.com**](https://subdomain.example.com)
 
-    <Check>
-      Note-2 : Authorized redirect URIs will be changed here. we just append 'admin/controller/oauth.php' to your script URL.
-    </Check>
-    ## Example 2 :
+  <Check>
+    Note-2 : Authorized redirect URIs will be changed here. we just append ‘admin/controller/oauth.php’ to your script URL.
+  </Check>
+  ## Example -2 :
 
-    it'll be :
+  [**https://example.com/admin/controller/oauth.php**](https://example.com/admin/controller/oauth.php)
 
-    https://example.com/admin/controller/oauth.php
+  For sub-domain install at [**https://subdomain.example.com**](https://subdomain.example.com) 
 
-    For sub-domain install at [**https://subdomain.example.com**](https://subdomain.example.com**) 
+  it’ll become : [**https://subdomain.example.com/controller/oauth.php**](https://subdomain.example.com/controller/oauth.php)
 
-    it'll become : [**https://subdomain.example.com/controller/oauth.php**](https://subdomain.example.com/controller/oauth.php**_)
+  For subfolder install at [**https://example.com/subfolder**](https://example.com/subfolder)
 
-    For subfolder install at [**https://example.com/subfolder**](https://example.com/subfolder**)
+  it’ll become : [**https://example.com/subfolder/controller/oauth.php**](https://example.com/subfolder/controller/oauth.php)
 
-    it'll become : [**https://example.com/subfolder/controller/oauth.php**](https://example.com/subfolder/controller/oauth.php**)
+![Google Console 5 Pn](/images/google_console_5.png)
 
-    ![Google Console 5 Pn](/images/google_console_5.png)
-  </Step>
-  <Step>
-    Copy your **Client ID** and **Secret Key**.
+- Copy your **Client ID** and **Secret Key**.
 
-    ![Google Console 6 Pn](/images/google_console_6.png)
+  ![Google Console 6 Pn](/images/google_console_6.png)
 
-    Finally Paste the copied keys in your **Admin Panel --\> Settings --\> Configuration --\> Google Login**
+  Finally Paste the copied keys in your **Admin Panel —\> Settings —\> Configuration —\> Google Login**
 
-    **​That’s it ..\!**
-  </Step>
-</Steps>
+  **​That’s it ..\!**
