@@ -1,5 +1,34 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+description: "Changing the App Intro's on [Pocket - Android Rewards App]"
+title: "App Intro's Configuration"
 ---
 
+https://codecanyon.net/item/android-rewards-app-pocket/17413949?ref=yashDev
+
+![1 Pn](/images/1.png)
+
+**To change the App Intro's image or text, just follow 2 quick steps\!**
+
+Open [IntroActivity.java](http://IntroActivity.java) (Android Project) file and find the below code :
+
+![App Intro Pn](/images/app_intro.png)
+
+Each line is one slide, to add another slide, add this line :
+
+​**AddSlide**(_AppIntroFragment.newInstance_(_"YOUR_TITLE", "YOUR_DESCRIPTION", R.drawable.YOUR_IMAGE, Color.parseColor("#3F51B5"_)));
+
+here,,,
+
+**YOUR_TITLE**  is your main title on the top
+
+**YOUR_DESCRIPTION ** is your below text
+
+**YOUR_IMAGE**   image name located on res-&gt;drawable folder
+
+**3F51B5**  is background color of the App Intro
+
+<Check>
+  Note : if you got error on color?? add this import to the file import android.graphics.Color;
+</Check>
+
+**That's ..it\! **
