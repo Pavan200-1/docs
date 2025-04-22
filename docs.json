@@ -23,13 +23,15 @@
               "offerwalls/wannads",
               "admin",
               "app-intro",
+              "facebook-android",
               "facebook-web",
               "fb-hash",
               "firebase-configuration",
               "fixing-push",
               "google-android",
               "google-web",
-              "how-to-update"
+              "how-to-update",
+              "ios-app-store"
             ]
           },
           {
