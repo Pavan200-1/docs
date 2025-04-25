@@ -1,64 +1,68 @@
 ---
-title: "AdMantum Offerwall Integration"
-description: "Seamlessly integrate Admantum Offerwall into your Pocket Script application"
+title: AdMantum Offerwall Integration
+sidebarTitle: AdMantum
+description: Seamlessly integrate Admantum Offerwall into your Pocket Script application
 ---
 
 ## Getting Started
 
 To Intergrate AdMantum offerwall, you'll need the following:
-
-1. AdMantum Account
-   - [Create An AdMantum Account](https://www.admantum.com/members/register.php)
-2. Postback URL for AdMantum Network
-   - Login to Admin Interface (Pocket Script instance)
-   - Navigate to `Settings -> Postbacks S2S` on the admin sidebar
-   - Copy the AdMantum Postback URL as shown in the admin interface
-
+    
+    1. AdMantum Account 
+        - [Create An AdMantum Account](https://www.admantum.com/members/register.php)
+    2. Postback URL for AdMantum Network
+        - Login to Admin Interface (Pocket Script instance)
+        - Navigate to `Settings -> Postbacks S2S` on the admin sidebar
+        - Copy the AdMantum Postback URL as shown in the admin interface
+    
 ### Getting AdMantum Ids
 
-To Intergrate AdMantum offerwall, you’ll need the following Ids :
+    To Intergrate AdMantum offerwall, you’ll need the following Ids : 
+    - PubId
+    - AppId
+    - SecretKey
+    
+    Please follow the below steps to get the required Ids
 
-- PubId
-- AppId
-- SecretKey
+    1. Login into your **_AdMantum Dashboard_** and Go to `Apps -> Add New App`
 
-Please follow the below steps to get the required Ids
+        ![Admantum 1](/images/networks/admantum/admantum_1.png)
 
-1. Login into your **_AdMantum Dashboard_** and Go to `Apps -> Add New App`
+    2. Give your App Details like below and click on `Create App` button. 
+    
+        ![Admantum 2](/images/networks/admantum/admantum_2.png)
+        
+    3. Go to `Apps -> Manage` on the AdMantum sidebar and copy the `Pub Id`, `App Id` and `Secret Key` 
 
-   ![Admantum 1](/images/networks/admantum/admantum_1.png)
-2. Give your App Details like below and click on `Create App` button.
-
-   ![Admantum 2](/images/networks/admantum/admantum_2.png)
-3. Go to `Apps -> Manage` on the AdMantum sidebar and copy the `Pub Id`, `App Id` and `Secret Key`
-
-   ![Admantum 3](/images/networks/admantum/admantum_3.png)
-4. Additional Step : Make your App Status Live on AdMantum
-
-   By default, your App Status will be as **Testing**
-   To Make it **Live** or to get Approved, we need to do a successful Postback Test
-
+        ![Admantum 3](/images/networks/admantum/admantum_3.png)
+        
+    4. Additional Step : Make your App Status Live on AdMantum
+    
+        By default, your App Status will be as **Testing**
+        To Make it **Live** or to get Approved, we need to do a successful Postback Test
+            
 ### Postback Test
+    
+    Follow the below steps to make a postback test on the AdMantum platform
 
-Follow the below steps to make a postback test on the AdMantum platform
+    1. Go to `Apps -> Manage` on the AdMantum sidebar
+    2. Select the app and click on **Postback Test button** to go to Postback test page
+    3. Input an valid user id from your application to test the postback
 
-1. Go to `Apps -> Manage` on the AdMantum sidebar
-2. Select the app and click on **Postback Test button** to go to Postback test page
-3. Input an valid user id from your application to test the postback
-
-   ![Admantum 4 Pn](/images/networks/admantum/admantum_5.png)
-
+        ![Admantum 4 Pn](/images/networks/admantum/admantum_5.png)
+        
 ## Integrating Offerwall
 
-1. Login to Admin Interface (Pocket Script instance)
-2. Navigate to `Offerwalls -> All Offerwalls` on the admin sidebar
-3. Select and Edit AdMantum Offerwall and scroll down to Id's Section
-4. Paste the copied `Pub Id`, `App Id` and `Secret Key` and click on the **Save Changes** button to complete the integration
+    1. Login to Admin Interface (Pocket Script instance)
+    2. Navigate to `Offerwalls -> All Offerwalls` on the admin sidebar
+    3. Select and Edit AdMantum Offerwall and scroll down to Id's Section
+    4. Paste the copied `Pub Id`, `App Id` and `Secret Key` and click on the **Save Changes** button to complete the integration
+    
+        ![Admantum 4](/images/networks/admantum/admantum_4.png)
+        
 
-   ![Admantum 4](/images/networks/admantum/admantum_4.png)
-
-That's it\!
+That's it!
 
 import HelpSnippet from '/snippets/help.mdx';
 
-<HelpSnippet />
+<HelpSnippet/>
