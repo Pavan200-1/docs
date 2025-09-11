@@ -13,6 +13,7 @@
           {
             "group":"Get started",
             "pages": [
+              "Frido-Docs/Campaign-Creation",
               "offerwalls/adgem",
               "offerwalls/admantum",
               "offerwalls/adscend-media",
