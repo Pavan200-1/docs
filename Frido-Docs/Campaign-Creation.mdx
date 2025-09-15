@@ -13,20 +13,31 @@ This is the most important decision as it determines the goal of your campaign a
 
 ![Admin Create Campaign Youth Needs 09 11 2025 04 16 PM Pn](/images/Admin-Create-Campaign-YouthNeeds-09-11-2025_04_16_PM.png)
 
-1. **Campaign Objective :** Choose the option that best matches your campaign.
+**Campaign Objective :** Choose the option that best matches your campaign.
 
-   **CPA (Cost Per Action):**
-   - **Goal:** Encourage users to take particular actions, including completing forms, creating leads, or signing up.
-   - **Payout:** You pay a fixed amount for each completed action.
-   - **Select this if:** Your objective is to collect user information or build an email list.
+**CPA (Cost Per Action): **Encourage users to perform specific actions.
 
-   **CPS (Cost Per Sale):**
-   - **Goal:** Increase your product or service's direct sales.
-   - **Payout:** You pay a percentage of the sale price as commission.
-   - **Select this if:** Your objective is to increase product sales.
-2. **Campaign Name :** Give your campaign name for your own records.
-3. **Campaign Status :** This is the current state of your campaign.
-4. **Feature Campaign:** This is an on/off switch. If you turn it on, your campaign might be highlighted on the website, making it more visible to affiliates.
+<Tip>
+  **Example:**
+
+  - A new mobile game wants to get more users to install its application when a user downloads and installs the game on their mobile device.
+  - For every user who installs the app through their unique referral link. You pay to your partner **\$5.** The goal is to get the app onto as many devices as possible, and you're paying for that specific action.
+</Tip>
+
+**CPS (Cost Per Sale): **Increase your product sales.
+
+<Tip>
+  **Example:**
+
+  - An online clothing store wants to increase revenue from a new seasonal collection. When a user buys a jacket and a pair of jeans from the new collection.
+  - If the customer's cart is **\$100** and the commission is **20%** of the total sale then the partner earns a **\$20** commission.
+</Tip>
+
+.
+
+1. **Campaign Name :** Give your campaign name for your own records.
+2. **Campaign Status :** This is the current state of your campaign.
+3. **Feature Campaign:** This is an on/off switch. If you turn it on, your campaign might be highlighted on the website, making it more visible to affiliates.
 
 ### **Campaign Details**
 
@@ -53,9 +64,33 @@ This is a critical step for ensuring that affiliates get credit for their action
 ![Admin Create Campaign Youth Needs 09 11 2025 05 24 PM Pn](/images/Admin-Create-Campaign-YouthNeeds-09-11-2025_05_24_PM.png)
 
 1. **Products :** If your campaign is for specific products, enter their IDs here, separated by commas. Leave this field blank to include all products. Only the products listed will be tracked for affiliate conversions.
+
+   <Tip>
+     **Example:** You are launching a new collection and want your affiliates to promote only specific items.
+     - **Product ID:** `PROD-001, PROD-005, PROD-012`
+     - Only sales of products with these IDs will be tracked and attributed to your affiliates for this campaign.
+     - You are running a store-wide holiday promotion.
+       - (Leave this field blank)
+       - All products on your site will be included in the campaign, and affiliates will receive credit for any sale they drive.
+   </Tip>
 2. **Campaign URL :** Enter the base URL that affiliates will promote.
    - The URL should include a placeholder for tracking, such as `?click_id={click_id}`. The platform uses this to identify each affiliate's clicks.
-3. **Conversion Tracking :** It specifies the platform which you use for conversion tracking (e.g., Shopify, Wix). This integration helps ensure accurate attribution.
+
+     <Tip>
+       **Example:** You want affiliates to send traffic to your main website.
+       -  `https://www.yourstore.com?click_id={click_id}`
+       - When an affiliate's link is clicked, the `click_id` parameter is automatically added to the URL, allowing your platform to track the click and the affiliate who referred it.
+     </Tip>
+3. **Conversion Tracking :** It specifies the platform which you use for conversion tracking (e.g., Shopify, Wix). This integration helps ensure accurate attribution by automatically sending conversion data back to your platform.
+
+   <Tip>
+     These are pre-built integrations for popular e-commerce platforms. 
+     - **Example (Shopify/Wix):**
+       - If Your online store is built on Shopify. 
+       - Go to campaign settings, select **"Shopify"** from the dropdown. 
+       - Then go to your Shopify account and install a specific tracking app or follow a guided setup to connect the two platforms.
+       - When a customer clicks a partner's link, makes a purchase on your Shopify store, and the sale is **automatically** recorded in your campaign platform. You don't have to manually add any code because the two systems are linked.
+   </Tip>
 
 ## Advanced Settings
 
@@ -78,21 +113,93 @@ To start,  Navigate to `Revenue & Payout` and click on the `"Add Event"` button.
 
 1. **Event Type:** Select the category for your event from the dropdown menu to classify your event.
    - **Product Viewed:** Use this to track when a user views a product page.
+
+     <Tip>
+       For an e-commerce campaign, you would select `Product viewed` to track when user visit.
+     </Tip>
    - **Purchase:** Select this for events that represent a completed sale.
-   - **Repeated Purchase:** Choose this for a customer's second purchase.
-   - **Other:** Use this for any event that does not fit into the other categories.
+
+     <Tip>
+       For an e-commerce campaign, you would select `Purchase` to track when a sale occurs.
+     </Tip>
+   - **Repeated Purchase:** Choose this for a subsequent purchases from the same customer.
+
+     <Tip>
+       The customer automatically renewal each month is considered a `Repeated purchase`.
+     </Tip>
+   - **Other:** The valuable actions that are not standard purchases.
+
+     <Tip>
+       A social networking site uses an `Other` event to track when a new user completes their profile, as this is a valuable action that increases user engagement and retention.
+     </Tip>
 2. **Event Name:** Enter a unique name for your event. This name will be used to identify the event throughout the system.
 3. **Revenue Type:** Choose how revenue is calculated for the event. It defines the financial value of the event.
    - **Fixed (RPA):** A fixed revenue amount is earned per action.
+
+     <Tip>
+       Select **Fixed (RPA)** and enter `10.00` in the **Revenue **field to represent a fixed **\$10.00** revenue.
+     </Tip>
    - **Percentage (RPS):** A percentage of the sale value is earned as revenue.
-4. **Revenue:** Enter the monetary value of the revenue. Change it based on the **Revenue Type** you select (e.g., a fixed amount or a percentage).
+
+     <Tip>
+       For a "Purchase" event, you set a **Percentage (RPS)** Revenue of `15%`. If a customer buys a product for \$100, the system records \$15.00 in revenue for that event.
+     </Tip>
+4. **Revenue:** Commission of an affiliate earns for doing successful actions (like sales or leads) for a merchant's products or services. 
+
+   <Tip>
+     Affiliates use unique tracking links to direct customers to the merchant, and if those customers make a purchase or complete a desired action, the affiliate receives a predetermined percentage or fixed amount of the profit. (e.g., a fixed amount or a percentage).
+   </Tip>
 5. **Payout Type:** **Payout Type** and **Payout** fields determine how a affiliate is paid for the event.
    - **Fixed (CPA):** The partner receives a fixed payment for a specific action.
+
+     <Tip>
+       **Example:**
+       - A gaming company wants to drive new installations of their app. They set the **Payout Type** to **Fixed (CPA)** with a **Payout** of **\$10**. A partner earns a one-time payment of \$10 for every user who installs the app and completes the tutorial.
+     </Tip>
    - **Percentage (CPS):** The partner receives a percentage of the sale value.
-   - **Revshare (PRV):** The partner receives a percentage of the total revenue.
+
+     <Tip>
+       **Example:**
+       - A fashion retailer wants to encourage partners to drive sales. They set the **Payout Type** to **Percentage (CPS)** with a **Payout** of **20%**. If a partner drives a sale of a dress for \$100, they earn a commission of **\$20**.
+     </Tip>
+   - **Revshare (PRV):** The partner earns a percentage of the revenue generated by a referred customer for the entire lifetime of that customer.
+
+     <Tip>
+       A company runs a platform to sell products. They want to encourage not only sell their products but also to drive traffic that leads to recurring purchases.
+
+       **Example:**
+       - When a user purchases a product for **\$50**, the partner earns a commission of **\$10** (20% of the purchase price).
+       - A few weeks later, the same user purchase another product for **\$30**. Here the original partner's referral is tied to the customer's lifetime, the partner earns an additional **\$6** (20% of the new purchase) without any extra effort.
+     </Tip>
    - **Hybrid (CPA \+ CPS):** A combination of both a fixed and a percentage of the sale.
-   - **Hybrid Revshare (CPA \+ PRV):** A combination of a fixed fee and a revenue-sharing model.
-6. **Payout:** Enter the value for the payout. The format will be a fixed amount or a percentage, depending on your **Payout Type** selection.
+
+     <Tip>
+       A company sells a software product and offers a free 14-day trial. They want to incentivize partners to drive both free sign-ups and paid conversions.
+       - **Fixed Fee (CPA):** The company pays a partner a **fixed payout of \$5** for every user who signs up for the free trial.
+       - **Percentage of Sale (CPS):** If that same user later converts to a paid subscription, the partner receives an additional **30% of the first month's subscription fee**.
+
+       **Example:**
+       - A partner refers a user who signs up for the free trial. The partner immediately earns **\$5**.
+       - Two weeks later, that user decides to purchase a monthly subscription that costs \$10.
+       - The partner then earns an additional **\$3** (30% of the \$10 subscription fee).
+
+       The total payout to the partner for that one customer is **\$8**. This hybrid model rewards the partner for both a simple action (the trial sign-up) and the sale.
+     </Tip>
+   - **Hybrid Revshare (CPA \+ PRV):** A combination of a fixed fee with an ongoing revenue share.
+
+     <Tip>
+       A gaming company wants to attract new users to a platform. They offer partners a deal that combines a fixed bonus with a long-term share of revenue from each user.
+
+       **Example:**
+       - **Fixed Fee (CPA):** The company pays a partner a **fixed payout of \$15** for every user who creates an account on their platform and completes the tutorial.
+       - **Ongoing Revenue Share (PRV):** In addition to the fixed fee, the partner earns a **15% revenue share** of all in-game purchases and subscriptions made by that referred user for as long as they play.
+     </Tip>
+6. **Payout:** The Money you pay to your Partners (affiliates, publishers, or influencers) for driving Clicks or Conversions to your Offer. 
+
+   <Tip>
+     **Example:**
+     - If a Partner drives a `$100` sale and you've set their Payout as a 20% of the Conversion’s sale amount, their Payout would be `$20`.
+   </Tip>
 7. **Visibility:**
    - **Public:** Use this to control the event's visibility.
      - **On:** The event is visible to all relevant users on the platform.
@@ -101,8 +208,30 @@ To start,  Navigate to `Revenue & Payout` and click on the `"Add Event"` button.
 
 ### **Scheduling & Capping**
 
-1. **Scheduling :** This section gives you control over the timing and budget of your campaign. You can plan your campaign to run during a specific time frame.
-2. **Day Parting :** It is a feature that allows you to specify the exact hours of the day and days of the week when your campaign will run. Instead of having your campaign active 24/7, you can choose to only show it during specific time blocks.
-3. **Capping :** This is a feature used to limit the number of conversions or the total budget for a campaign.
+1. **Scheduling:** the time frame when a specific campaign is active. This feature allows you to automatically start and stop a promotion or a payout rule based on a set date and time. It's used for planned campaigns, holiday offers, or any time-sensitive event.
+
+   <Tip>
+     **Example:**
+
+     A company is running a special promotion for **Black Friday** with **50% **off
+     - **Start Date/Time:** November 29, 2025, at 12:00 AM
+     - **End Date/Time:** November 29, 2025, at 11:59 PM
+
+     **How it works:** Any sales made before or after this specific 24-hour window will not be eligible for the special 50% payout. This ensures the campaign runs exactly as planned without manual intervention.
+   </Tip>
+2. **Day Parting:** It is a feature that allows you to specify the exact hours of the day and days of the week when your campaign will run. Instead of having your campaign active 24/7, you can choose to only show it during specific time blocks.
+
+   <Tip>
+     **Example:**
+
+     An online store wants to run a campaign for a flash sale
+     - The campaign is set to run only from **10:00 PM to 11:00 PM** on saturday and sunday. The store avoids paying for clicks or views when the store is closed or during remaining periods making their sale spend more efficient.
+   </Tip>
+3. **Day Capping:** This is a feature used to limit the number of conversions or the total budget for a campaign.
+
+   <Tip>
+     **Example:**
+     - A company has a fixed monthly budget of \$1,000 for a free trial sign-up campaign. Each sign-up costs \$10. The campaign will automatically stop or notify you once it has achieved 100 sign-ups (100 x \$10 = \$1,000). This prevents you from overspending your budget.
+   </Tip>
 
 **Hit the Save Campaign button to create your campaign successfully.**
