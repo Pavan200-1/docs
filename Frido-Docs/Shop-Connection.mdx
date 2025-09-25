@@ -2,3 +2,60 @@
 description: "Connecting your Shopify store to the platform to enable conversion and sales tracking."
 title: "Connect Your Shopify Store"
 ---
+
+### **Access Token**
+
+This section covers the initial authentication process to link your store.
+
+1. **Store Domain : **Enter the full domain of your Shopify store. This is the URL you use to access your Shopify admin, which typically ends in `.myshopify.com`.
+
+   <Check>
+     **Example:** If your store is called "**adomatix-1,**" you would enter `adomatix-1.myshopify.com`.
+   </Check>
+2. **Access Token :** This is a unique, encrypted key that provides the platform with secure access to your store's data. You will need to generate this token from your Shopify admin.
+   - **How to Get the Token :**
+     - Log in to your Shopify admin dashboard.
+     - Go to **Settings -\> Apps -\> sales channels**.
+     - Click **Develop apps** and then **Create an app**.
+     - Name your app (e.g., "Adomatix Integration") and click **Create app**.
+     - In the **Configuration** tab, click **Configure Admin API scopes**.
+     - Grant the necessary permissions as indicated on the screen (e.g., `read_discounts`, `read_orders`, `read_products`, etc.).
+     - Save your changes.
+     - Click **Install app** and then **Install** again.
+     - You will be shown your Admin API Access Token. **Copy this token immediately** as it will only be shown once.
+     - Paste the copied token into the **Access Token** field on this page.
+
+   Once the connection is established, the platform will display the specific permissions it has been granted. A green checkmark and the text **"Your data is secure"** confirm the secure connection.
+
+### **Web Pixel**
+
+It is a crucial piece of JavaScript code that tracks user, such as product views and purchases.
+
+1. **Status :**
+   - **Connected :** If the status is "Connected", it means the web pixel code has been successfully installed on your website. It is actively sending data to the platform.
+
+     <Check>
+       A connected status ensures that all relevant user actions are being tracked and reported correctly. When this status is active, you can be confident that your campaign data is reliable.
+     </Check>
+   - **Not Connected :** If the status is "Not Connected", it means the web pixel code has not been installed on your website.
+
+     <Check>
+       The provided JavaScript tracking code needs to be copied and pasted into the correct location in your store's backend (e.g., in the header or through a dedicated pixel manager.
+     </Check>
+2. **JavaScript Pixel :**
+   - This code block contains the unique tracking script tailored for your platform.
+   - Click the **Copy Code** button in the top-right corner of the code block. This will copy the entire script to your clipboard.
+3. **How to Install the Web Pixel:**
+   - Log in to your Shopify admin dashboard.
+   - Navigate to **Settings -\> Customer events**.
+   - Click the **Add custom pixel** button.
+   - Give your pixel a descriptive name (e.g., "Adomatix Conversion Pixel").
+   - In the code editor, paste the JavaScript code you copied in the previous step.
+   - Click **Save**. After saving, you may need to click the **Connect** button on the pixel to activate it.
+
+### **Shopify App**
+
+It provides details about the platform's integration with the Shopify App.
+
+1. **Primary Domain :** Enter your primary domain of your platform, which is directly linked to the Shopify app. It serves as a reference for how the app communicates with your system.
+2. **Token :** This is a secure, unique token that facilitates the direct communication between the Shopify App and your platform. It is a system-generated credential and does not require any action from you.
