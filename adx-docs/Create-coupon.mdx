@@ -1,5 +1,61 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: "Create Coupon"
+description: "Create a new discount code (coupon) and link it to a specific affiliate and campaign. "
 ---
 
+### Shopify Discount Code
+
+The single most important link between your affiliate platform and your Shopify store's sales data.
+
+- Enter the exact _discount code_ as it is set up in your Shopify store.
+- Customer's purchases can be linked to a specific partner through this code.
+
+  <Check>
+    This field must match an _existing_ discount code in your connected Shopify store for sales tracking to work correctly.
+
+    **Example:** `SUMMER20`
+  </Check>
+
+### Campaign
+
+Campaign is used to categorize and organize your promotions.
+
+- Link a coupon with a specific campaign allows you to track the performance.
+- To link the coupon to an existing, defined marketing campaign (e.g., "Holiday Sale 2025").
+- Enter the unique ID or name of the campaign you wish to associate this coupon (e.g., "1234").
+
+### Coupon Type
+
+Coupon Type defines the relationship between the discount code and the affiliate, which dictates how conversions are tracked
+
+| Coupon Type | Description                                      | Explanation                                                                                           | Best For                                                                                                                                                                            |
+| ----------- | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Exclusive   | For Single Affiliate : Unlimited Conversions     | A single, permanent code (`OCT20`) is always given to one partner.                                    | **Highest Accuracy.** Recommended for individual influencers or brand ambassadors.                                                                                                  |
+| Unique      | For Single Affiliate : Single Conversion         | A code that can be used by an affiliate, but is limited to being used only once by a single customer. | **Referral Programs.** Good for limited-time offers or first-purchase incentives where you want strict control over usage.                                                          |
+| Generic     | For All Affiliates : Must use with Tracking link | A general code that multiple affiliates can promote (`SAVE10`).                                       | **Broad Campaigns.** This is used when the affiliate additionally offers a tracking link. The platform depends on both clicking on links and using code, which can cause confusion. |
+
+<Check>
+  Always prioritize using **Exclusive Coupon** types with a unique code for each affiliate to prevent commission disputes and ensure 100% accurate tracking.
+</Check>
+
+### Affiliate
+
+Select the specific affiliate who will be assigned this coupon code. Use the dropdown menu to search for and select the affiliate's name or ID. 
+
+All sales using this coupon will be credited to this selected affiliate.  **Example:**  `Joe (ID: 567)`.
+
+### Title
+
+A short, descriptive title for the coupon, primarily used for internal organization and clear reporting within the platform.  **Example:** `Get 20% Off`
+
+### Description
+
+Provide a detailed explanation of the coupon's usage rules, terms and conditions. 
+
+<Check>
+  **Example:** `Valid for First Time only, on orders over $50.`
+</Check>
+
+Once all fields are correctly filled, click the **Create Coupon** button. 
+
+The coupon record is saved, and the system is ready to track sales using the specified code and attribute them to the chosen affiliate.
