@@ -13,9 +13,9 @@
           {
             "group":"Get started",
             "pages": [
-              "Frido-Docs/Campaign-Creation",
-              "Frido-Docs/Platform-Branding",
-              "Frido-Docs/Shop-Connection",
+              "Adx-Docs/Campaign-Creation",
+              "Adx-Docs/Platform-Branding",
+              "Adx-Docs/Shop-Connection",
               "offerwalls/adgem",
               "offerwalls/admantum",
               "offerwalls/adscend-media",
