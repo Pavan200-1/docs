@@ -13,9 +13,9 @@
           {
             "group":"Get started",
             "pages": [
-              "adx-Docs/Campaign-Creation",
-              "adx-Docs/Platform-Branding",
-              "adx-Docs/Shop-Connection",
+              "adx-docs/Campaign-Creation",
+              "adx-docs/Platform-Branding",
+              "adx-docs/Shop-Connection",
               "offerwalls/adgem",
               "offerwalls/admantum",
               "offerwalls/adscend-media",
