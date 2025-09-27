@@ -10,22 +10,41 @@ This section covers the initial authentication process to link your store.
 1. **Store Domain:** Enter the full domain of your Shopify store. This is the URL you use to access your Shopify admin, which typically ends in `.myshopify.com`.
 
    <Check>
-     **Example:** If your store is called "**adomatix-1,**" you would enter `adomatix-1.myshopify.com`.
+     **Example:** If your store is called "**nika.myshopify.com**" you would enter **nika**
    </Check>
 2. **Access Token:** This is a unique, encrypted key that provides the platform with secure access to your store's data. You will need to generate this token from your Shopify admin.
-   - **How to Get the Token :**
-     - Log in to your Shopify admin dashboard.
-     - Go to **Settings -\> Apps -\> sales channels**.
-     - Click **Develop apps** and then **Create an app**.
-     - Name your app (e.g., "Adomatix Integration") and click **Create app**.
-     - In the **Configuration** tab, click **Configure Admin API scopes**.
-     - Grant the necessary permissions as indicated on the screen (e.g., `read_discounts`, `read_orders`, `read_products`, etc.).
-     - Save your changes.
-     - Click **Install app** and then **Install** again.
-     - You will be shown your Admin API Access Token. **Copy this token immediately** as it will only be shown once.
-     - Paste the copied token into the **Access Token** field on this page.
 
-   Once the connection is established, the platform will display the specific permissions it has been granted. A green checkmark and the text **"Your data is secure"** confirm the secure connection.
+   **How to Get the Token :**
+
+- Log in to your Shopify admin dashboard.
+- Go to **Settings -\> Apps and sales channels**.
+- Click **Develop apps** and then **Create an app**.
+- Name your app (e.g., "Adomatix Integration") and click **Create app**.
+- In the **Configuration** tab, click **Configure **button on _Admin API Integration_
+
+  Grant the necessary permissions
+
+  Select all the below mentioned scropes
+
+| `read_discounts`       | This scope is used to check discount code validity while creating a coupon code campaign                         |
+| :--------------------- | :--------------------------------------------------------------------------------------------------------------- |
+| `write_discounts`      | This scope is used to create custom partner coupon based on the original linked coupons                          |
+| `read_orders`          | This scope is used to create a conversion on the platfom                                                         |
+| `read_customer_events` | This scope is used to check partner clickid and its validity                                                     |
+| `write_pixels`         | This scope is used to place Adomatix pixel in your shopify store to record product views and order placed events |
+| `read_pixels`          | This scope is used to modify the pixel if code updated is required                                               |
+| `read_products`        | This scope is used to select the targeted products while creating a campaign for specific product                |
+| `read_returns`         | This scope is used to read orders refund and make necessary chargebacks                                          |
+| `read_shipping`        | This scope is used to read order shipping to release comission to the partners                                   |
+| `read_all_orders`      | This scope is used to create a conversion on the platfom                                                         |
+| `read_fulfillments`    | This scope is used to track order fulfillment to release comission to the partners                               |
+
+- Save your changes.
+- Click **Install app** and then **Install** again.
+- You will be shown your Admin API Access Token. **Copy this token immediately** as it will only be shown once.
+- Paste the copied token into the **Access Token** field on this page.
+
+1. Once the connection is established, the platform will display the specific permissions it has been granted. A green checkmark and the text **"Your data is secure"** confirm the secure connection.
 
 ### **Web Pixel**
 
