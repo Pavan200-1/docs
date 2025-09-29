@@ -13,6 +13,7 @@
             {
                 "group": "Get started",
                 "pages": [
+                    "adx-docs/Become-a-partner",
                     "adx-docs/Campaign-Creation",
                     "adx-docs/Create-Coupon",
                     "adx-docs/Dashboard",
